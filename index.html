@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodieees special</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        h3 {
+            text-align: center;
+            background-color: steelblue;
+            color: tomato;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: bold;
+            font-size: larger;
+            color: darkmagenta;
+        }
+
+        #comment {
+            border: 1px solid black;
+        }
+
+        .btn {
+            border-radius: 8px;
+
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="mt-4">&#x1F356; Welcome to the Food Festival &#x1F354;</h3>
+        <div class="row mt-5">
+
+
+            <div class="col-6">
+
+                <div>
+                    <p>Hey guys, we are conducting an event to know your favourite food. To do that click below button
+                        and we will display a picture.</p>
+                </div>
+
+                <button class="btn btn-primary btn-block" onclick="food()">Click here</button>
+
+                <div class="mt-4 form" >
+                    <textarea name="" id="comment" cols="50" rows="5" class = "col-sm-6 col-md-6 col-lg-6" wrap="hard"
+                        placeholder="Leave your comments here..."></textarea><br>
+
+                    <button class="btn btn-secondary" onclick="submit()">Submit</button>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <img id=image src="" alt="" class="img-fluid" width="400" height="400">
+            </div>
+
+        </div>
+    </div>
+
+    <script src='Apitask3.js'></script>
+</body>
+
+</html>
